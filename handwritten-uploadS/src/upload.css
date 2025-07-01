@@ -1,0 +1,240 @@
+html, body {
+  margin: 0;
+  background-color: #fafafa;
+}
+
+.upload-container {
+  background-color: #dfe2e6;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.upload-container h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.upload-container p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.upload-box {
+  display: block;
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.upload-box input[type="file"] {
+  display: none;
+}
+
+.upload-placeholder {
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-icon {
+  height: 15px;
+  width: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.image-preview img {
+  width: 400px;
+  height: 210px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  display: block;
+  background-color: #cce6ff;
+}
+
+.image-preview-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.image-preview {
+  width: 400px;
+  height: 210px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.delete-button {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  background: white;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.delete-icon {
+  width: 10px;
+  height: 10px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.delete-icon:hover {
+  opacity: 1;
+}
+
+.digitize-button {
+  background-color: #0084ff;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.digitize-button:hover {
+  background-color: #1607e4;
+}
+
+.preview-response-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.response-box {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  padding: 2rem 1rem 1rem 1rem; /* top padding for floating buttons */
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* ✅ Positioned icons inside the top-right corner of response box */
+.response-actions-fixed {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+  padding: 0.25rem;
+  border-radius: 8px;
+ 
+}
+
+.action-button {
+
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(10, 10, 10, 0.1);
+}
+
+.action-icon {
+  width: 15px;
+  height: 15px;
+  opacity: 0.8;
+  background-color: #f7f6f6;
+  transition: opacity 0.2s ease;
+}
+
+.action-icon:hover {
+  opacity: 1;
+}
+
+.warning-message {
+  color: rgb(211, 83, 83);
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.glyphic-description {
+  font-size: 16px;
+  font-family: 'Times New Roman', monospace;
+  white-space: normal;
+  overflow: hidden;
+  width: fit-content;
+  height: 4.5em;
+  line-height: 1.5em;
+}
+
+.typing::after {
+  content: '|';
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.response-wrapper {
+  position: relative;
+  width: 400px;
+}
+
+
+
+.loader-container {
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digitize-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.response-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: monospace;
+  font-size: 14px;
+  /* Remove scroll styles here */
+  overflow: unset;
+  max-height: unset;
+}
+
+
+.logo-container {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 10;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
