@@ -1,0 +1,9 @@
+frontend:
+  type: http
+  to: localhost:5173
+  subdomain: ocr-myfrontend  # Replace with your desired subdomain
+
+backend:
+  type: http
+  to: localhost:5000
+  subdomain: ocr-mybackend   # Replace with your desired subdomain
